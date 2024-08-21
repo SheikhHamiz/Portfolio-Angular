@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html {
+    font-family: "Lato", sans-serif;
+    background: rgb(11,11,11);
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(37,37,68,1) 35%, rgba(12,12,38,1) 100%);
+    color: white;
+    scroll-behavior: smooth;
+}
+

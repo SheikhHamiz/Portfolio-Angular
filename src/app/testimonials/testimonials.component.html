@@ -1,0 +1,17 @@
+<section class="testimonials">
+    <div [ngClass]="animationLeft ? animations[0] : animations[1]" id="carousel">
+        <fa-icon [icon]="leftArrow" (click)="shiftLeftRightCarousel(-2)" class="arrows"></fa-icon>
+        <div *ngFor="let t of listOfTestimonials.slice(leftIndex,rightIndex)" class="testimonial-container">
+            <div>
+                <fa-icon [icon]="quoteLeft"></fa-icon>
+                <p>{{t.testimony}}</p>
+                <fa-icon [icon]="quoteRight"></fa-icon>
+            </div>
+            <div class="writer">
+                <fa-icon [icon] = "user"></fa-icon>
+                <span>{{t.nameOfWriter}}</span>
+            </div>
+        </div>
+        <fa-icon [icon]="rightArrow" (click)="shiftLeftRightCarousel(2)" class="arrows"></fa-icon>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="hobbies">
+    <div class="top border">
+        <p style="font-size: x-large; margin: 0;">Hobbies</p>
+        <fa-icon [icon]="dropdown" (click) ="onClick()"></fa-icon>
+    </div>
+    <div *ngIf="displayHobbies()">
+        <div *ngFor="let hobby of listOfHobbies" class="template border">
+            <fa-icon [icon] ="hobby.icon"></fa-icon>
+            <span>{{hobby.name}}</span>
+        </div>
+    </div>
+</section>

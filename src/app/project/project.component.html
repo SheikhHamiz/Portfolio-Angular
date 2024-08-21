@@ -1,0 +1,14 @@
+<section class="project" id="project">
+    <p style="font-size: xx-large; text-align: center;">Projects</p>
+    <div class="project-container">
+        <div *ngFor="let p of projects" class="project-template">
+            <img [src] = "p.image" alt="project-img">
+            <p class="title">
+                {{p.name}}
+            </p>
+            <p>
+                {{p.desc}}
+            </p>
+        </div>
+    </div>
+</section>

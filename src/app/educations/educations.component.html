@@ -1,0 +1,13 @@
+<section class="education" id="education">
+    <p style="font-size: x-large;">Education</p>
+    <div *ngFor="let item of education" class="template">
+        <div class="institute-details">
+            <span class="institute-name">{{item.institute}}</span>
+            <span>
+                {{item.endDate | date : "MMMM Y"}}
+            </span>
+        </div>
+        <div class="degree">{{item.course}}</div>
+        <div>Cgpa {{item.cgpa}}</div>
+    </div>
+</section>

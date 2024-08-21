@@ -1,0 +1,50 @@
+.testimonials {
+    margin:1rem;
+}
+.testimonials > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.testimonials  .testimonial-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    aspect-ratio: 9/16;
+    box-shadow: rgba(111, 110, 110, 0.35) 0px 5px 15px;
+}
+
+.animationRight {
+    animation-name: transformRight;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+}
+.animationLeft {
+    animation-name: transformLeft;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+}
+.testimonials .arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large
+}
+.testimonials .writer {
+    display: flex;
+    gap: 1rem;
+}
+
+@keyframes transformRight {
+    from { transform: translateX(100%)}
+    to {transform: translateX(0%);}
+}
+@keyframes transformLeft {
+    from { transform: translateX(-100%)}
+    to {transform: translateX(0%);}
+}
+
+

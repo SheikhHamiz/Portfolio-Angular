@@ -1,0 +1,25 @@
+<section class="experience" id="experience">
+    <p style="font-size: x-large;">Experience</p>
+    <div class="timeline-head">
+        <span *ngFor="let item of experience; index as i">
+            {{item.endDate| date: "MMMM Y"}}
+        </span>
+    </div>
+    <div class="timeline">
+        <fa-icon [icon]="circle" [ngClass]="selected[0] ? select : unselect" (click) ="onClick(0)"></fa-icon>
+        <span></span>
+        <fa-icon [icon]="circle" [ngClass]="selected[1] ? select : unselect" (click) ="onClick(1)"></fa-icon>
+    </div>
+    <div *ngFor="let item of experience.slice(0,index)" class="job-template">
+        <span class="companyName">{{item.companyName}}</span>
+        <div>
+            <span class="title">{{item.title}}</span>
+            <span>
+                {{item.startDate | date : "MMMM Y"}}
+                {{" - "}}  
+                {{item.endDate | date : "MMMM Y"}}
+            </span>
+        </div>
+        <span class="desc">{{item.desc}}</span>
+    </div>
+</section>

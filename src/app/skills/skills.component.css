@@ -1,0 +1,21 @@
+.skills{
+    margin-inline: 1rem;
+}
+.star-gold {
+    color: gold;
+}
+.skill-template {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+}
+.skillset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+    box-shadow: rgba(111, 110, 110, 0.35) 0px 5px 15px;
+}

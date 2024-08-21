@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10px;
+    left: 35%;
+    z-index: 100000;
+    background: rgb(44, 44, 44);
+    background: linear-gradient(90deg, rgb(63, 63, 63) 0%, rgb(55, 55, 100) 35%, rgb(25, 25, 81) 100%);
+    width: 500px;
+    padding: 1rem;
+    gap: 1rem;
+}
+.form button {
+    background-color: rgb(50, 50, 66);
+    color: white;
+    border: none;
+    height: 40px;
+}
+.form textarea {
+    padding: 1rem;
+}
+.form input {
+    padding: 0.4rem;
+}
+.form input:not(:placeholder-shown):valid {
+    outline-color: green;
+}
+.form input:not(:placeholder-shown):invalid {
+    outline-color: red;
+}
+
+.form p {
+    margin-left: auto;
+}

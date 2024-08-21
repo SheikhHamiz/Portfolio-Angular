@@ -1,0 +1,18 @@
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    text-decoration: none;
+}
+.btn-download {
+    border: 1px solid  rgba(111, 110, 110, 0.35);
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width:200px;
+}
+.btn-download:hover {
+    border: 1px solid  rgba(54, 53, 53, 0.35);
+    background-color: rgb(55, 16, 92);
+}

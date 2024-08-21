@@ -1,0 +1,17 @@
+.hobbies {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.hobbies .border{
+    border: 1px solid rgba(111, 110, 110, 0.35);
+    padding: 1rem;
+}
+.hobbies > .top {
+    display: flex;
+    justify-content: space-between;
+}
+.hobbies .template {
+    display: flex;
+    gap: 0.4rem;
+}

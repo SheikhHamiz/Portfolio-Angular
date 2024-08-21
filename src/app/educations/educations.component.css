@@ -1,0 +1,28 @@
+.education {
+    margin-inline: 1rem;
+}
+.template {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.institute-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.institute-name, .degree {
+    font-size: large;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+

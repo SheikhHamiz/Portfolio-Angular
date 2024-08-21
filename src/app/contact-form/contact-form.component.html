@@ -1,0 +1,16 @@
+<form *ngIf="showForm && !success" action="" class="form">
+    <p (click)="displayForm()">X</p>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" required minlength="5" placeholder="at least 5 characters">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" required minlength="5" placeholder="at least 5 characters">
+    <label for="msg">Message</label>
+    <textarea name="" id="msg" required minlength="15" placeholder="at least 15 characters">
+    </textarea>
+    <button (click)="submition()">submit</button>
+</form>
+<div class="form" *ngIf="success">
+    <p (click)="displayForm()">X</p>
+    <fa-icon [icon]="tick" style="font-size: 100px; text-align: center;"></fa-icon>
+    <p style="text-align: center!important;">Submited</p>
+</div>
